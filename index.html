@@ -166,14 +166,41 @@
     }
   </style>
 </head>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("img_snow_wide.png");
+
+  /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
+
+</body>
+</html>
 
 <body>
   <section>
-    <div class="container">
-      <img src="img_snow_wide.png" alt="Snow" style="width:100%;">
-      <div class="centered">Centered</div>
-    </div>
-    </div>
+    
     <div class="title">
       <h1>Keeneland Racetrack</h1>
       <h2>Fayette County, Kentucky</h2>
