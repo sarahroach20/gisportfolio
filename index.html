@@ -25,7 +25,20 @@
       color: rgb(32, 32, 32);
       background-color: rgba(83, 81, 61, 0.384);
     }
+    /* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
     /* Define styles for the headings */
     h1 {
       font-size: 5rem;
@@ -151,7 +164,11 @@
 
 <body>
   <section>
-    <p class="caption">Cesium story created using lidar data of Keeneland</p>
+    <div class="container">
+      <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
+      <div class="centered">Centered</div>
+    </div>
+    </div>
     <div class="title">
       <h1>Keeneland Racetrack</h1>
       <h2>Fayette County, Kentucky</h2>
