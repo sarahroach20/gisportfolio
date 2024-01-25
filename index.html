@@ -1,213 +1,109 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8" />
-  <title>Sarah Roach</title>
-  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
 
-    /* Set margin/padding to fit border in box model */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-    /* Define styles on body (and all descendants) */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      color: rgb(32, 32, 32);
-      background-color: rgba(83, 81, 61, 0.384);
-    }
-  
-    /* Define styles for the paragraph */
-    p {
-      font-size: 1.3rem;
-      font-weight: 400;
-      margin: 0 0 10px 0;
-      padding: 0;
-      color:rgb(32, 32, 32)
-    }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-    a:link,
-    a:visited {
-      color: rgb(10, 54, 8);
-    }
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-    a:hover {
-      color: rgb(86, 86, 86);
-      text-decoration: none;
-    }
-
-    section {
-      width: 80%;
-      margin: 0 auto;
-    }
-
-    footer {
-      width: 80%;
-      margin: 0 auto;
-      color: rgb(100, 100, 100);
-    }
-
-    iframe {
-      border: 1px solid rgb(200, 200, 200);
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
-    .caption {
-      font-size: 0.8rem;
-      font-weight: 400;
-      font-style: italic;
-      margin: 0;
-      padding: 0;
-      color: rgb(100, 100, 100);
-    }
-
-    .title {
-      text-align: left;
-      margin: 20px;
-    }
-    .image-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .image-container img {
-    display: block;
-    width: 100%;
-    height: 50%;
-  }
-  
-  .overlay-text {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    background-color: #000000; 
-    color: #fff; 
-    padding: 10px 20px; 
-    font-size: 20px; 
-    text-align: center;
-    /* Set up a container for the two columns */
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    /* Define styles for the left column */
-    .left-column {
-      flex-basis: 40%;
-      background-color: rgba(169, 177, 168, 0.384);
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    /* Define styles for the right column */
-    .right-column {
-      flex-basis: 55%;
-      background-color: rgba(169, 177, 168, 0.384);
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-
-    /* Round image corners for images inside the right-column */
-    .right-column img {
-      border-radius: 10px;
-    }
-
-    /* Media query for small screens */
-    /* For screens up to 768px, apply these rules. */
-    @media (max-width: 768px) {
-
-      /* Change to a single column layout */
-      .container {
-        flex-direction: column;
-      }
-
-      /* Set full width for both columns */
-      .left-column,
-      .right-column {
-        flex-basis: 100%;
-      }
-    }
-  </style>
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
 </head>
-<html>
-
-    <body>
-        <div class="image-container">
-            <img src="img_snow_wide2.png" alt="image">
-            <div class="overlay-text">Sarah Roach</div>
-        </div>
-    </body>
-</html>
-</html>
-
 <body>
-  <section>
-    
-    <div class="title">
-      <h1>Cartographer</h1>
 
-      <h2>Fayette County, Kentucky</h2>
-    </div>
-    <div class="container">
-      <div class="left-column">
-        <h3>Description</h3>
-        <p>
-          GIS Technician with a focus on cartography and creating beautifully professional maps with clear
-          readability to maximize its message and leave an impact on audiences. Key achievement: capstone map
-          series on pollution in Louisville published in ESRI Map Book Volume 38. 
-       </p>
-        <p>
-          filler
-        </p>
-        <p>
-          filler
-        </p>
+<h2 style="text-align:center">Multiple Slideshows</h2>
 
-        <p>
-          Visualizations created from lidar data provided by
-          <a href="https://kyfromabove.ky.gov/">KyFromAbove</a> in 
-          <a href="https://www.esri.com/en-us/arcgis/products/arcgis-desktop/overview">ArcGIS</a> and 
-          <a href="https://cesium.com/platform/cesium-ion/">Cesium Ion</a>. The second visualization
-          was uploaded to youtube to make the video easily accessible and sharable.
-        </p>
+<p>Slideshow 1:</p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="img_nature_wide.jpg" style="width:100%">
+  </div>
 
-        <p>
-          Web page and visualizations created by sb, Department of
-          Geography, University of Kentucky. Spri.
-        </p>
+  <div class="mySlides1">
+    <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides1">
+    <img src="img_mountains_wide.jpg" style="width:100%">
+  </div>
 
-      </div>
-      <div class="right-column">
-        <h3>Vizualizations </h3>
-        <img src="treelayout.jpg" alt="This map shows the different heights of tree canopies around Keeneland's paddock and barns." width="100%" />
-        <p class="caption"><a href="Layout.pdf" download>Analysis of different tree canopy heights processed with ArcGIS using KyFromAbove data.</a></p>
-        
-                 <p class="caption">Arial Lidar data processed with ArcGIS using KyFromAbove data</p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <hr />
-   
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
 
-  </footer>
+<p>Slideshow 2:</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="img_band_chicago.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="img_band_la.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="img_band_ny.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
 </body>
-
-</html>
+</html> 
