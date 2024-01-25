@@ -41,10 +41,138 @@ img {vertical-align: middle;}
   background-color: #bbb;
   color: black;
 }
+  background-color: #FAFAFA;
+			}
+
+			p {
+				font-family: 'Archivo Narrow'; serif;
+        			font-size: 30px;
+				color: #565656;
+				padding: 10px 30px;
+			}
+
+			#first {
+				font-family:'Archivo Narrow', serif;
+				font-size: 30px;
+				text-align: left;
+				color: #565656;
+			}
+
+			#second{
+				text-align: center;
+				font-family: 'Beth Ellen', serif;
+        			font-size: 90px;
+				text-shadow: 9px 9px 9px #bbb;
+				font-weight: 700;
+				color: #565656;
+				
+			}
+
+			#third {
+				font-family:'Archivo Narrow', serif;
+				font-size: 30px;
+				font-weight: 700;
+				text-align: center;
+				color: #565656;
+			}
+			#fourth {
+				text-align: center;
+				color: #565656;
+			}
+			#fifth {
+				font-family:'Archivo Narrow', serif;
+				font-size: 30px;
+				text-align: left;
+				color: #565656;
+			}
+			.image-container {
+				position: relative;
+				display: inline-block;
+			}
+  
+			.image-container img {
+				display: block;
+				width: 100%;
+				height: 50%;
+			}
+  
+			.overlay-text {
+				position: absolute;
+				top: 25%;
+				left: 50%;
+				transform: translate(-50%, -50%); 
+				color: #565656; 
+				padding: 5px 5px; 
+				text-align: center;
+								
+			}
+			#contentArea {
+         			height: 70px;
+         			width: 170px;
+         			position: relative;
+				left: 44.5%;
+        		}
+			#contentArea2 {
+         			height: 70px;
+         			width: 270px;
+         			position: relative;
+         			left: 42%;
+				
+        		}
+			p.round2 {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #EBE1E7;
+				border-width: 35px 15px;
+			}
+			p.round3 {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #EBE3D3;
+				border-width: 35px 15px;
+			}
+			p.round4 {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #DAE1EB;
+				border-width: 35px 15px;
+			}
+			p.round5 {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #DDEBCF;
+				border-width: 35px 15px;
+			}
+			p.round6 {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #E0DEEB;
+				border-width: 35px 15px;
+			}
 </style>
 </head>
 <body>
-
+<div class="image-container">
+            <img src="img_snow_wide2.png" alt="image">
+            <div class="overlay-text">
+	    	<p id="second">Sarah Roach</p>
+  		<p id="third">Cartographer & GIS Professional</p>
+		</div>
+		<div id="contentArea">
+             <p class="round2" id="third">About Me</p> 
+         
+	</div>
+		
+		<p id="fourth">This is the second paragraph!</p>
+		<div id="contentArea2">
+             <p class="round3" id="third">Proj 1</p> 
+         	
+	</div>
+		</div>
+		<p id="fourth">This is the third paragraph!</p>
+		<div id="contentArea2">
+             <p class="round4" id="third">Proj 2</p> 
+	        	
 <h2 style="text-align:center">Multiple Slideshows</h2>
 
 <p>Slideshow 1:</p>
