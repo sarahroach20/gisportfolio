@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Beth+Ellen">
 <style>
 * {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
+.mySlides1, .mySlides2, .mySlides3 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -213,11 +213,29 @@ img {vertical-align: middle;}
   <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 </div>
 </div>
-		
+<p>Slideshow 3:</p>
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="lansdowne-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="downtown-01-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="beaumont-01.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+	
 	</div>
 <script>
 let slideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2"]
+let slideId = ["mySlides1", "mySlides2", "mySlides3"]
 showSlides(1, 0);
 showSlides(1, 1);
 
