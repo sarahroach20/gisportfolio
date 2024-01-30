@@ -4,65 +4,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Beth+Ellen">
 <style>
-			* {box-sizing: border-box}
-			.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
-				img {vertical-align: middle;}
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+img {vertical-align: middle;}
 
 /* Slideshow container */
-			.slideshow-container {
-  				width: 800px;
-  				position: relative;
-  				vertical-align: middle;
-  				margin: auto;
-  				border: 3px solid red;
-				padding: 5px;
-				
-			}
+.slideshow-container {
+  width: 800px;
+  position: relative;
+  vertical-align: middle;
+  left: 30%;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  border: 3px solid red;
+
+}
 
 /* Next & previous buttons */
-			.prev, .next {
-  				cursor: pointer;
-  				position: absolute;
-  				top: 50%;
-  				width: auto;
-  				padding: 16px;
-  				margin-top: -22px;
-  				color: black;
-  				font-weight: bold;
-  				font-size: 18px;
-  				transition: 0.6s ease;
-  				border-radius: 0 3px 3px 0;
-  				user-select: none;
-			}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
 /* Position the "next button" to the right */
-			.next {
-  				right: 0;
-  				border-radius: 3px 0 0 3px;
-			}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
 /* On hover, add a grey background color */
-			.prev:hover, .next:hover {
-  				background-color: #bbb;
-  				color: black;
-				}
-  			* {
-    				margin: 0;
-    				padding: 0;
-				}
-
-		
-			div {
-   			 	width: 100%;
-			    	height: 100%;
-   				display: flex;
-		    		align-items:center;
-    				justify-content: center;
-			}
-			body {
- 				background-color: #FAFAFA;
-				height: 95vh;
-    				width: 95vw;
+.prev:hover, .next:hover {
+  background-color: #bbb;
+  color: black;
+}
+  background-color: #FAFAFA;
 			}
 
 			p {
@@ -102,9 +87,10 @@
 				color: #565656;
 				font-size: 25px;
 				font-family:'Archivo Narrow', serif;
-				padding: 50px;
+				padding: 5px;
 				border: 3px solid green;
-				
+				margin-top: 15px;
+                                margin-bottom: -15px;
 
 			}
 			#fifth {
@@ -134,17 +120,6 @@
 				text-align: center;
 								
 			}
-  
-			.overlay-text2 {
-				position: absolute;
-				top: 30%;
-				left: 50%;
-				transform: translate(-50%, -50%); 
-				color: #565656; 
-				padding: 5px 5px; 
-				text-align: center;
-								
-			}
 			#contentAreaAboutme {
          			margin: auto;
   				width: 20%;
@@ -158,13 +133,14 @@
 			#contentArea2 {
          			margin: auto;
   				width: 50%;
-				padding: 5px 5px;  
+				padding: 10px;  
 				border: 3px solid blue;
-				
+				margin-top: 15px;
+                                margin-bottom: -15px
         		}
 			#contentAreaProjecttitle {
-         			height: 100px;
-         			width: 100px;
+         			height: 150px;
+         			width: 400px;
          			position: relative;
          			left: 42%;
 				margin: auto;
@@ -176,7 +152,7 @@
   				background: #EBE1E7;
 				border-width: 35px 15px;
 				padding: 10px;
-				
+				margin-bottom: -10px
 				margin: auto;
   				width: 50%;
 				
@@ -187,7 +163,7 @@
   				background: #EBE3D3;
 				border-width: 65px 65px;
 				padding: 10px;
-				
+				margin-bottom: -10px;
 				margin: auto;
   				width: 50%;		
 			}
@@ -197,7 +173,7 @@
   				background: #DAE1EB;
 				border-width: 35px 15px;
 				padding: 10px;
-				
+				margin-bottom: -10px;
 				margin: auto;
   				width: 50%;	
 			}
@@ -205,9 +181,9 @@
   				border-style: hidden;
  				border-radius: 20px;
   				background: #DDEBCF;
-				border-width: 5px 15px;
+				border-width: 35px 15px;
 				padding: 10px;
-				
+				margin-bottom: -10px;
 				margin: auto;
   				width: 50%;	
 			}
@@ -217,7 +193,7 @@
   				background: #E0DEEB;
 				border-width: 35px 15px;
 				padding: 10px;
-				
+				margin-bottom: -10px;
 				margin: auto;
   				width: 50%;	
 			}
@@ -237,12 +213,10 @@
             <img src="bannerfilter.jpg" alt="image">
             <div class="overlay-text">
 	    	<p id="secondtitle">Sarah Roach</p>
-  			    
-		</div>
-	<div class="overlay-text2">
-	    	<p id="thirdheader">Cartographer & GIS Professional</p>
+  		<p id="thirdheader">Cartographer & GIS Professional</p>
 		    
 		</div>
+	
 		<div id="contentAreaAboutme">
              <p class="redborder" id="thirdheader">About Me</p> 
          
