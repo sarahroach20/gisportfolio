@@ -10,10 +10,10 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  width: 100%;
+  width: 50%;
   position: relative;
   vertical-align: middle;
-    display: flex;
+	display: flex;
   padding: 50px;
   justify-content: center;
 	margin: auto,
@@ -22,8 +22,8 @@ img {vertical-align: middle;}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: absolute;
-  bottom: -30%;
+  position: relative;
+  
   width: 100%;
   padding: 50px;
   margin-top: 5px;
@@ -244,7 +244,9 @@ img {vertical-align: middle;}
 				
 				width: 100%;
         			position: relative;
-        			border: 10px, green;
+        			border: 10px,
+				border-style: solid;
+  				border-color: red;
 				display: flex;
   				justify-content: center;
 				padding: 45px;
@@ -291,9 +293,7 @@ img {vertical-align: middle;}
         <img src="MAPBOOK v38_3-HHS-NtlResMgt-PubSafEmMgt_55-56-1.png" id="border" style="width:100%">
       		</div>
 
-		<div id="contentAreaAboutme">
-             <p class="redborder" id="thirdheader">About Me</p> 
-		
+	
 	<div id="aarowcontainer">
    	<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
       	<a class="next" onclick="plusSlides(1, 0)">&#10095;</a> 
