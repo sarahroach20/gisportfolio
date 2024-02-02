@@ -10,44 +10,42 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  width: 50%;
+  max-width: 1000px;
   position: relative;
-  vertical-align: middle;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 450px;
-  padding: 50px;
-  justify-content: center;
+  margin: auto;
+  border-style: solid;
+  border-color: red;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
-  position: relative;
-  top: 30%;
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-left: 280px;	
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
   color: black;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 60x;
+  border-radius: 0 3px 3px 0;
   user-select: none;
+  border-style: solid;
+  border-color: red;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 20x;
+  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
-  background-color: #bbb;
+  background-color: #f1f1f1;
   color: black;
-}
+  }
   background-color: #FAFAFA;
   width: 100%;
 			}
@@ -57,13 +55,7 @@ img {vertical-align: middle;}
         			font-size: 30px;
 				color: #565656;
 				padding: 10px 5px;
-			}
-
-			#first {
-				font-family:'Archivo Narrow', serif;
-				font-size: 20px;
-				text-align: center;
-				color: #E1E1E1;
+		
 			
 			}
 
@@ -75,7 +67,7 @@ img {vertical-align: middle;}
 				font-weight: 700;
 				color: #565656;
 				position: relative;
-				margin-top: 15px;
+				margin-top: 25px;
 				
 				
 			}
@@ -121,7 +113,7 @@ img {vertical-align: middle;}
   
 			.overlay-text {
 				position: absolute;
-				top: 20%;
+				top: 10%;
 				left: 50%;
 				transform: translate(-50%, -50%); 
 				color: #565656; 
@@ -235,10 +227,14 @@ img {vertical-align: middle;}
         			
 				display: flex;
   				justify-content: center;
-				padding: 45px;
-				margin-top: -75px;
+				
+				
+				 border-style: solid;
+  				border-color: red;
+}
 			}
-			
+}
+
 </style>
 </head>
 <body>
@@ -257,32 +253,31 @@ img {vertical-align: middle;}
 	<div	
 	<p id="fourthbody">GIS Technician with a focus on cartography and creating beautifully professional maps with clear readability to maximize its message and leave an impact on audiences. Key achievement: capstone map series on pollution in Louisville published in ESRI Map Book Volume 38</p>
 		</div>
-
-	<div id="contentArea2">
-        <p class="orangeborder" id="thirdheader">UK Senior Capstone Project/ESRI Map Book, 2022</p> 
-         	</div>
-		 
-		<p id="fourthbody">For my undergraduate Geography senior capstone project at the University of Kentucky, I wanted to pull from my personal experiences growing up in South Louisville near heavy industry. I would often walk to the bus stop in the morning and smell the putrid odor from the next door industrial facilicties.  Using data from the EPA, CDC, and Census Bureau, I explored the connection between historical demographic housing patterns, like redlining in Louisville's west end neighborhoods, and the proxmitity to polluting facilities. By using a bivariate classification scheme, I was able to show multiple critical data sets and types simultanelously, showcasing the concerning trend in the city. In 2022, I attended the ESRI User Conference in San Diego through my job at the PVA. I submitted this project and was selected to be used in ESRI's 2023 Map Book (Volume 3B). As a cartographer, I wish to communicate important issues, such as these, in a easily understood, disgestiable, and attractive way.   </p>
-	        </div>
-
-	<div class="slideshow-container">
-        <div class="mySlides1">
-        <img src="ASTHMACOPD.PNG" id="border" style="width:100%">
-        </div>
-        <div class="mySlides1">
-        <img src="BLACKPOVERTY.PNG" id="border" style="width:100%">
-        </div>
-        <div class="mySlides1">
-	<img src="LIFEEXPECTANCY.PNG" id="border" style="width:100%">
-        </div>
-        <div class="mySlides1">
-        <img src="MAPBOOK v38_3-HHS-NtlResMgt-PubSafEmMgt_55-56-1.png" id="border" style="width:100%">
-      		</div>
-		
-   	<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-      	<a class="next" onclick="plusSlides(1, 0)">&#10095;</a> 
-			
+<div id="contentArea2">
+             <p class="orangeborder" id="thirdheader">UK Senior Capstone Project/ESRI Map Book, 2022</p> 
+         
 		</div>
+	<div	
+	<p id="fourthbody">For my undergraduate Geography senior capstone project at the University of Kentucky, I wanted to pull from my personal experiences growing up in South Louisville near heavy industry. I would often walk to the bus stop in the morning and smell the putrid odor from the next door industrial facilicties.  Using data from the EPA, CDC, and Census Bureau, I explored the connection between historical demographic housing patterns, like redlining in Louisville's west end neighborhoods, and the proxmitity to polluting facilities. By using a bivariate classification scheme, I was able to show multiple critical data sets and types simultanelously, showcasing the concerning trend in the city. In 2022, I attended the ESRI User Conference in San Diego through my job at the PVA. I submitted this project and was selected to be used in ESRI's 2023 Map Book (Volume 3B). As a cartographer, I wish to communicate important issues, such as these, in a easily understood, disgestiable, and attractive way.</p>
+		</div>
+
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="tablet1-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="tablet2-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="tablet3-01.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
 
 		<div id="storymaplink">
 		
@@ -297,105 +292,103 @@ img {vertical-align: middle;}
 
 		
     		</div>
-   
-    		</div>
-		<div id="contentArea2">
+<div id="contentArea2">
              <p class="blueborder" id="thirdheader">PVA Field Map for Assessors, 2023</p> 
+         
 		</div>
-	
-	     <p id="fourthbody">When I started working for the PVA in 2021, the orginal field map they used was only 3 layers, being the parcel layer. roads, and buidling outlines. With their limited resources out of the office, I wanted to make a field map that more accuracelty reflected what was actually there in person and provide much needed context to assessors. I used map layers from the Lexington-Fayette Urban County Government (LFUCG), University of Kentucky, KYGEONET, and Openstreetmap, as well as creating/editing my own layera when possible. Orignally, the parcel layer would only get updated a few times a year and had to be created from scratch everytime. Now, the tablet maps are updated twice a month or as needed, and the needed basemap map document is now accessible on a shared space on the network. This new process for the field maps elimnated the frustration assocaited with the parcel layer being outdated and the confusion of a new location.    </p>
+	<div	
+	<p id="fourthbody">>When I started working for the PVA in 2021, the orginal field map they used was only 3 layers, being the parcel layer. roads, and buidling outlines. With their limited resources out of the office, I wanted to make a field map that more accuracelty reflected what was actually there in person and provide much needed context to assessors. I used map layers from the Lexington-Fayette Urban County Government (LFUCG), University of Kentucky, KYGEONET, and Openstreetmap, as well as creating/editing my own layera when possible. Orignally, the parcel layer would only get updated a few times a year and had to be created from scratch everytime. Now, the tablet maps are updated twice a month or as needed, and the needed basemap map document is now accessible on a shared space on the network. This new process for the field maps elimnated the frustration assocaited with the parcel layer being outdated and the confusion of a new location</p>
 		</div>
-			<div>
-	<div id="storymapsettings">
-	<img src="Media1-Trim-ezgif.com-video-to-gif-converter.gif"
-				</div>
 
-	<div class="slideshow-container">
-	<div class="mySlides2">
-        <img src="tablet1-01.png" id="border" style="width:100%">
-      		</div>
-      	<div class="mySlides2">
-        <img src="tablet2-01.png" id="border" style="width:100%">
-      		</div>
-      	<div class="mySlides2">
-        <img src="tablet3-01.png" id="border" style="width:100%">
-      		</div>
-      	<div class="mySlides2">
-        <img src="tabletscale_1k.png" id="border" style="width:100%">
-      		</div>
-      	<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-      	<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-		</div>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="nbhd134-01-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="nbhd71-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="nbhd188-01.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+</div>
 
 		<div id="storymaplink">
-		<a href="https://sarahroach20.github.io/gisportfolio/tablet1-01.png">Slide 1</a>
 		
-		<a href="https://sarahroach20.github.io/gisportfolio/tablet2-01.png">Slide 2</a>
 		
-		<a href="https://sarahroach20.github.io/gisportfolio/tablet3-01.png">Slide 3</a>
+		<a href="https://sarahroach20.github.io/gisportfolio/MAPBOOK%20v38_3-HHS-NtlResMgt-PubSafEmMgt_55-56-1.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/ASTHMACOPD.PNG">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/BLACKPOVERTY.PNG">Slide 3</a>
 
-		<a href="https://sarahroach20.github.io/gisportfolio/tabletscale_1k.png">Slide 4</a>
-   		</div>
-     
-		<div id="contentArea2">
+		<a href="https://sarahroach20.github.io/gisportfolio/LIFEEXPECTANCY.PNG">Slide 4</a>
+
+</div>
+<div id="contentArea2">
              <p class="greenborder" id="thirdheader">PVA Assessor NBHD Maps, 2023</p> 
-                </div>
-	
-	     <p id="fourthbody">orem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus.
-Vivamus integer non suscipit taciti mus etiam at primis tempor sagittis sit, euismod libero facilisi aptent elementum felis blandit cursus gravida sociis erat ante, eleifend lectus nullam dapibus netus feugiat curae curabitur est ad. Massa curae fringilla porttitor quam sollicitudin iaculis aptent leo ligula euismod dictumst, orci penatibus mauris eros etiam praesent erat volutpat posuere hac. Metus fringilla nec ullamcorper odio aliquam lacinia conubia mauris tempor, etiam ultricies proin quisque lectus sociis id tristique, integer phasellus taciti pretium adipiscing tortor sagittis ligula.
-Mollis pretium lorem primis senectus habitasse lectus scelerisque donec, ultricies tortor suspendisse adipiscing fusce morbi volutpat pellentesque, consectetur mi risus molestie curae malesuada cum. Dignissim lacus convallis massa mauris enim ad mattis magnis senectus montes, mollis taciti phasellus accumsan bibendum semper blandit suspendisse faucibus nibh est, metus lobortis morbi cras magna vivamus per risus fermentum. Dapibus imperdiet praesent magnis ridiculus congue gravida curabitur dictum sagittis, enim et magna sit inceptos sodales parturient pharetra mollis, aenean vel nostra tellus commodo pretium sapien </p>
-	        </div>
-	
-	<div class="slideshow-container">
-        <div class="mySlides3">
-        <img src="nbhd71-01.png" id="border" style="width:100%">
-                </div>
-        <div class="mySlides3">
-        <img src="nbhd134-01-01.png" id="border" style="width:100%">
-        	</div>
-        <div class="mySlides3">
-        <img src="nbhd188-01.png" id="border" style="width:100%">
-        	</div>
-        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+         
 		</div>
+	<div	
+	<p id="fourthbody">GIS Technician with a focus on cartography and creating beautifully professional maps with clear readability to maximize its message and leave an impact on audiences. Key achievement: capstone map series on pollution in Louisville published in ESRI Map Book Volume 38</p>
+		</div>	
+	<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="beaumont-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="downtown-01-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="stonewall.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+</div>
 
 		<div id="storymaplink">
-
-		<a href="https://sarahroach20.github.io/gisportfolio/nbhd71-01.png">Slide 1</a>
 		
-		<a href="https://sarahroach20.github.io/gisportfolio/nbhd134-01-01.png">Slide 2</a>
 		
-		<a href="https://sarahroach20.github.io/gisportfolio/nbhd188-01.png">Slide 3</a>
+		<a href="https://sarahroach20.github.io/gisportfolio/MAPBOOK%20v38_3-HHS-NtlResMgt-PubSafEmMgt_55-56-1.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/ASTHMACOPD.PNG">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/BLACKPOVERTY.PNG">Slide 3</a>
 
-				
-		</div>
-	
-	<div id="contentArea2">
+		<a href="https://sarahroach20.github.io/gisportfolio/LIFEEXPECTANCY.PNG">Slide 4</a>
+
+</div> 
+
+<div id="contentArea2">
              <p class="purpleborder" id="thirdheader">UK Mapping Racial Violence in Kentucky Storymap Timeline, 2022</p> 
-        	</div>
-	 <p id="fourthbody">orem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus.
-Vivamus integer non suscipit taciti mus etiam at primis tempor sagittis sit, euismod libero facilisi aptent elementum felis blandit cursus gravida sociis erat ante, eleifend lectus nullam dapibus netus feugiat curae curabitur est ad. Massa curae fringilla porttitor quam sollicitudin iaculis aptent leo ligula euismod dictumst, orci penatibus mauris eros etiam praesent erat volutpat posuere hac. Metus fringilla nec ullamcorper odio aliquam lacinia conubia mauris tempor, etiam ultricies proin quisque lectus sociis id tristique, integer phasellus taciti pretium adipiscing tortor sagittis ligula.
-Mollis pretium lorem primis senectus habitasse lectus scelerisque donec, ultricies tortor suspendisse adipiscing fusce morbi volutpat pellentesque, consectetur mi risus molestie curae malesuada cum. Dignissim lacus convallis massa mauris enim ad mattis magnis senectus montes, mollis taciti phasellus accumsan bibendum semper blandit suspendisse faucibus nibh est, metus lobortis morbi cras magna vivamus per risus fermentum. Dapibus imperdiet praesent magnis ridiculus congue gravida curabitur dictum sagittis, enim et magna sit inceptos sodales parturient pharetra mollis, aenean vel nostra tellus commodo pretium sapien </p>
+         
 		</div>
-	
+	<div	
+	<p id="fourthbody">GIS Technician with a focus on cartography and creating beautifully professional maps with clear readability to maximize its message and leave an impact on audiences. Key achievement: capstone map series on pollution in Louisville published in ESRI Map Book Volume 38</p>
+		</div>
 	<div id="storymapsettings">
 	<iframe src="https://storymaps.arcgis.com/stories/273734e859fb43bd9cb770735a793857" width="100%" height="450px" frameborder="10" allowfullscreen allow="geolocation"></iframe>
 		</div>
 	<div id="storymaplink">
 	<a href="https://storymaps.arcgis.com/stories/273734e859fb43bd9cb770735a793857">Full Link</a>
 		</div>
-		</div>
-	
-	<div id="contentArea2">
+</div>
+<div id="contentArea2">
         <p class="redborder" id="thirdheader">SmileyPete Magazine Real Estate Edition Maps, 2023</p> 
         	</div>
-	<p id="fourthbody">Torem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus.
-Vivamus integer non suscipit taciti mus etiam at primis tempor sagittis sit, euismod libero facilisi aptent elementum felis blandit cursus gravida sociis erat ante, eleifend lectus nullam dapibus netus feugiat curae curabitur est ad. Massa curae fringilla porttitor quam sollicitudin iaculis aptent leo ligula euismod dictumst, orci penatibus mauris eros etiam praesent erat volutpat posuere hac. Metus fringilla nec ullamcorper odio aliquam lacinia conubia mauris tempor, etiam ultricies proin quisque lectus sociis id tristique, integer phasellus taciti pretium adipiscing tortor sagittis ligula.
-Mollis pretium lorem primis senectus habitasse lectus scelerisque donec, ultricies tortor suspendisse adipiscing fusce morbi volutpat pellentesque, consectetur mi risus molestie curae malesuada cum. Dignissim lacus convallis massa mauris enim ad mattis magnis senectus montes, mollis taciti phasellus accumsan bibendum semper blandit suspendisse faucibus nibh est, metus lobortis morbi cras magna vivamus per risus fermentum. Dapibus imperdiet praesent magnis ridiculus congue gravida curabitur dictum sagittis, enim et magna sit inceptos sodales parturient pharetra mollis, aenean vel nostra tellus commodo pretium sapien </p>
-	      </div>
-	
-		</div>
+	<div	
+	<p id="fourthbody">GIS Technician with a focus on cartography and creating beautifully professional maps with clear readability to maximize its message and leave an impact on audiences. Key achievement: capstone map series on pollution in Louisville published in ESRI Map Book Volume 38</p>
+ </div>
+	</div>
       <div class="slideshow-container">
       <div class="mySlides4">
       <img src="beaumont-01.png" id="border" style="width:100%">
@@ -417,10 +410,8 @@ Mollis pretium lorem primis senectus habitasse lectus scelerisque donec, ultrici
 		<a href="https://sarahroach20.github.io/gisportfolio/downtown-01-01.png">Slide 2</a>
 		
 		<a href="https://sarahroach20.github.io/gisportfolio/waterford-01.png">Slide 3</a>
-
-	      
-    		</div>	
 		</div>
+	</div>
 	
 	<div id="contentAreaAboutme">
         <p class="orangeborder" id="thirdheader">UK Mapshop</p> 
@@ -429,8 +420,7 @@ Mollis pretium lorem primis senectus habitasse lectus scelerisque donec, ultrici
 Vivamus integer non suscipit taciti mus etiam at primis tempor sagittis sit, euismod libero facilisi aptent elementum felis blandit cursus gravida sociis erat ante, eleifend lectus nullam dapibus netus feugiat curae curabitur est ad. Massa curae fringilla porttitor quam sollicitudin iaculis aptent leo ligula euismod dictumst, orci penatibus mauris eros etiam praesent erat volutpat posuere hac. Metus fringilla nec ullamcorper odio aliquam lacinia conubia mauris tempor, etiam ultricies proin quisque lectus sociis id tristique, integer phasellus taciti pretium adipiscing tortor sagittis ligula.
 Mollis pretium lorem primis senectus habitasse lectus scelerisque donec, ultricies tortor suspendisse adipiscing fusce morbi volutpat pellentesque, consectetur mi risus molestie curae malesuada cum. Dignissim lacus convallis massa mauris enim ad mattis magnis senectus montes, mollis taciti phasellus accumsan bibendum semper blandit suspendisse faucibus nibh est, metus lobortis morbi cras magna vivamus per risus fermentum. Dapibus imperdiet praesent magnis ridiculus congue gravida curabitur dictum sagittis, enim et magna sit inceptos sodales parturient pharetra mollis, aenean vel nostra tellus commodo pretium sapien </p>
       		</div>
-	
-		</div>
+	</div>
 	<div class="slideshow-container">
         <div class="mySlides5">
         <img src="evictionrateblackpoplogo-01.png" id="border" style="width:100%">
@@ -477,30 +467,32 @@ Mollis pretium lorem primis senectus habitasse lectus scelerisque donec, ultrici
 			</div>
 	
 </div>
+	</div>
 <script>
-    var slideIndex = [1,1,1,1,1];
-    var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5" ]
-    showSlides(1, 0);
+let slideIndex = [1,1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5" ]
+showSlides(1, 0);
     showSlides(1, 1);
     showSlides(1, 2);
     showSlides(1, 3);
     showSlides(1, 4);
-    function plusSlides(n, no) {
-      showSlides(slideIndex[no] += n, no);
-    }
 
-    function showSlides(n, no) {
-      var i;
-      var x = document.getElementsByClassName(slideId[no]);
-      if (n > x.length) {slideIndex[no] = 1}    
-      if (n < 2) {slideIndex[no] = x.length}
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";  
-      }
-      x[slideIndex[no]-1].style.display = "block";  
-    
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
 }
 </script>
 
 </body>
 </html> 
+
