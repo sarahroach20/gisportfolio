@@ -10,51 +10,39 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  margin: auto;
-  width: 40%;
+/* Slideshow container */
+.slideshow-container {
+  width: 50%;
+  position: relative;
+  vertical-align: middle;
   margin-top: 20px;
-  padding: 10px;  
-display: flex;
-justify-content: center;
-position: relative;
+  margin-bottom: 20px;
+  margin-left: 450px;
+  padding: 50px;
+  justify-content: center;
 }
 
 /* Next & previous buttons */
-.prev,  {
+.prev, .next {
   cursor: pointer;
-  
-  position: absolute; 
-  left: 0; 
-  top: 110%;
+  position: relative;
+  top: 30%;
   width: 100%;
-  	
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 280px;	
   color: black;
   font-weight: bold;
   font-size: 25px;
   transition: 0.6s ease;
   border-radius: 60x;
   user-select: none;
- 
 }
+
+/* Position the "next button" to the right */
 .next {
-  cursor: pointer;
-  position: absolute; 
-	right: 0; 
-	top: 110%;;
-  
-  width: 100%;
-  
-  font-weight: bold;
-  font-size: 25px;
-  transition: 0.6s ease;
-  border-radius: 60x;
-  user-select: none;
-  
-}
-
-
-}
-
+  right: 0;
+  border-radius: 20x;
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
   background-color: #bbb;
