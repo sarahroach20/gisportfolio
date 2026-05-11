@@ -223,23 +223,88 @@ img {vertical-align: middle;}
 			#storymaplink {
 				
 				width: 100%;
-        			position: relative;
+        		position: relative;
         			
 				display: flex;
   				justify-content: center;
-				
 
+			
+				
 			}
+
+		.hero-banner {
+		    position: relative;
+   			width: 100%;
+    		overflow: hidden;
+			}
+
+
+		.hero-banner img {
+    		width: 100%;
+    		height: auto;
+    		display: block;
+			}
+
+	
+		.hero-text {
+    		position: absolute;
+    		inset: 0;
+
+    		display: flex;
+    		flex-direction: column;
+
+    		justify-content: center;
+    		align-items: center;
+
+    		text-align: center;
+
+    		padding: 2rem;
+
+    		overflow: hidden;
+			}
+
+
+		.hero-text h1 {
+    		font-family: 'Beth Ellen', serif;
+
+    		font-size: clamp(2rem, 7vw, 6rem);
+
+    		color: #565656;
+
+    		margin: 0;
+
+    		line-height: 1.1;
+
+    		text-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+
+    		max-width: 90%;
+			}
+
+
+		.hero-text h2 {
+  		  font-family: 'Archivo Narrow', serif;
+
+   		 font-size: clamp(1rem, 2.5vw, 2rem);
+
+   		 color: #565656;
+
+    	margin-top: 1rem;
+
+    	max-width: 90%;
+
 }
 
 </style>
 </head>
 <body>
-<div class="image-container">
-            <img src="bannerfilter.jpg" alt="image">
-            <div class="overlay-text">
-	    	<p id="secondtitle">Sarah Roach</p>
-  		<p id="thirdheader">Cartographer & GIS Professional</p>
+<div class="hero-banner">
+    <img src="bannerfilter.jpg" alt="Banner Image">
+
+    <div class="hero-text">
+        <h1>Sarah Roach</h1>
+        <h2>Cartographer & GIS Professional</h2>
+    </div>
+</div>
 		    
 		</div>
 	
