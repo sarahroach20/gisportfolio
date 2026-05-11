@@ -281,17 +281,43 @@ img {vertical-align: middle;}
 			}
 
 
-		.hero-text h2 {
-  		  font-family: 'Archivo Narrow', serif;
+		.hero-text h2 }
+			font-family: 'Archivo Narrow', serif;
+			font-size: clamp(1rem, 2.5vw, 2rem);
+			color: #565656;
+			margin-top: 1rem;
+			max-width: 90%;
+			}
+	
+		.section-box {
+    		border-radius: 20px;
+    		padding: 1rem 1.5rem;
+			width: min(90%, 700px);
+			margin: 1.5rem auto;
+			text-align: center;
+			font-family: 'Archivo Narrow', serif;
+			font-size: clamp(1rem, 3vw, 2rem);
+			overflow-wrap: break-word;
+			}
+		.redborder {
+    		background: #EBE1E7;
+			}
 
-   		 font-size: clamp(1rem, 2.5vw, 2rem);
+		.orangeborder {
+    		background: #EBE3D3;
+			}
 
-   		 color: #565656;
+		.blueborder {
+    		background: #DAE1EB;
+			}
 
-    	margin-top: 1rem;
+		.greenborder {
+    		background: #DDEBCF;
+			}
 
-    	max-width: 90%;
-
+		.purpleborder {
+    		background: #E0DEEB;
+		}
 }
 
 </style>
@@ -307,9 +333,8 @@ img {vertical-align: middle;}
 </div>
 		    
 		</div>
-	
-		<div id="contentAreaAboutme">
-             <p class="redborder" id="thirdheader">About Me</p> 
+		<h2 class="section-box redborder">About Me</h2>
+
          
 		</div>
 	<div	
