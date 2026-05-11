@@ -57,29 +57,26 @@ img {vertical-align: middle;}
 			
 			}
 
-			#secondtitle{
-				text-align: center;
-				font-family: 'Beth Ellen', serif;
-        			font-size: 90px;
-				text-shadow: 9px 9px 9px #bbb;
-				font-weight: 700;
-				color: #565656;
-				position: relative;
-				margin-top: 200px;
-				
-				
+			#secondtitle {
+   				font-family: 'Beth Ellen', serif;
+    			font-size: clamp(2rem, 8vw, 6rem);
+    			color: #565656;
+    			text-shadow: 4px 4px 8px #bbb;
+    			margin: 0;
+    			line-height: 1.1;
 			}
+	
+
 
 			#thirdheader {
-				font-family:'Archivo Narrow', serif;
-				font-size: 32px;
-				font-weight: 700;
-				text-align: center;
-				color: #565656;
-				position: relative;
+    			font-family: 'Archivo Narrow', serif;
+    			font-size: clamp(1rem, 3vw, 2rem);
+    			color: #565656;
+    			margin-top: 1rem;
+			}
 
 				
-			}
+
 			#fourthbody {
 				text-align: center;
 				color: #565656;
@@ -99,26 +96,31 @@ img {vertical-align: middle;}
 				color: #565656;
 			}
 			.image-container {
-				position: relative;
-				display: inline-block;
+    			position: relative;
+  				width: 100%;
+  				max-width: 100%;
+ 			    overflow: hidden;
 			}
-  
+
 			.image-container img {
-				display: block;
-				width: 100%;
-				height: 50%;
+    			display: block;
+    			width: 100%;
+    			height: auto;
 			}
-  
+
 			.overlay-text {
-				position: absolute;
-				top: 10%;
-				left: 50%;
-				transform: translate(-50%, -50%); 
-				color: #565656; 
-				padding: 5px 5px; 
-				text-align: center;
-								
+			    position: absolute;
+			    inset: 0;
+
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+
+			    text-align: center;
+			    padding: 2rem;
 			}
+	
 			#contentAreaAboutme {
 				
          			margin: auto;
