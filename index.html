@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Beth+Ellen">
 <style>
 * {box-sizing: border-box}
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+.mySlides0, .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -287,12 +287,12 @@ body {
     		display: block;
 			}
 		.side-by-side-images {
-    		display: flex;
+   			display: flex;
     		justify-content: center;
     		align-items: center;   
     		gap: 30px;
     		margin: 2rem auto;
-    		flex-wrap: wrap;
+    		flex-wrap: nowrap;
 			}
 
 
@@ -352,7 +352,7 @@ A major focus of the project was reliability and speed during high-volume produc
 <div class="slideshow-container">
 
     <!-- Slide 1: Full Notice -->
-    <div class="mySlides1">
+    <div class="mySlides0">
         <div class="side-by-side-images">
             <img class="vertical" src="14442600-1.png">
             <img class="horizontal" src="14442600-2.png">
@@ -360,7 +360,7 @@ A major focus of the project was reliability and speed during high-volume produc
     </div>
 
     <!-- Slide 2: Old vs New Comparison -->
-    <div class="mySlides1">
+    <div class="mySlides0">
         <div class="side-by-side-images">
 
             <div style="width:48%; text-align:center;">
@@ -648,56 +648,43 @@ This project was part of broader GIS and transit planning work where I regularly
 </div>
 	</div>
 <script>
-let slideIndex = [1,1,1,1,1];
-let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5" ]
-showSlides(1, 0);
-    showSlides(1, 1);
-    showSlides(1, 2);
-    showSlides(1, 3);
-    showSlides(1, 4);
+let slideIndex = [1,1,1,1,1,1];
+
+let slideId = [
+  "mySlides0",
+  "mySlides1",
+  "mySlides2",
+  "mySlides3",
+  "mySlides4",
+  "mySlides5"
+];
+
+for (let i = 0; i < slideId.length; i++) {
+  showSlides(1, i);
+}
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
 
 function showSlides(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}    
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
+  let slides = document.getElementsByClassName(slideId[no]);
+
+  if (slides.length === 0) return;
+
+  if (n > slides.length) {
+    slideIndex[no] = 1;
   }
-  x[slideIndex[no]-1].style.display = "block";  
-}
-</script>
-<script>
-let slideIndex = [1];
-let slideId = ["mySlides1"];
 
-showSlides(1, 0);
+  if (n < 1) {
+    slideIndex[no] = slides.length;
+  }
 
-function plusSlides(n, no) {
-    showSlides(slideIndex[no] += n, no);
-}
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
 
-function showSlides(n, no) {
-    let i;
-    let slides = document.getElementsByClassName(slideId[no]);
-
-    if (n > slides.length) {
-        slideIndex[no] = 1;
-    }
-
-    if (n < 1) {
-        slideIndex[no] = slides.length;
-    }
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    slides[slideIndex[no]-1].style.display = "block";
+  slides[slideIndex[no] - 1].style.display = "block";
 }
 </script>
 </body>
