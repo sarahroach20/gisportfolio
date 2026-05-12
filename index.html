@@ -321,12 +321,6 @@ body {
 		.purpleborder {
     		background: #E0DEEB;
 			}
-		.side-by-side-images {
-    		display: flex;
-    		gap: 20px;
-    		justify-content: center;
-    		margin: 2rem auto;
-			}
 
 		.img-wrap {
     		width: 48%;
@@ -346,10 +340,35 @@ body {
 			}
 
 		.single-image img {
-    		width: min(90%, 800px);
+    		width: min(100%, 800px);
+    		height: auto;
+    		border-radius: 5px;
+    		display: block;
+			}
+		.side-by-side-images {
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;   /* key for vertical alignment */
+    		gap: 30px;
+    		margin: 2rem auto;
+    		flex-wrap: wrap;
+			}
+
+		/* default behavior: images keep natural proportions */
+		.side-by-side-images img {
     		height: auto;
     		border-radius: 10px;
     		display: block;
+			}
+
+		/* vertical image (taller one) */
+		.side-by-side-images img.vertical {
+			width: 320px;   /* control size manually */
+			}
+
+		/* horizontal image (wider one) */
+		.side-by-side-images img.horizontal {
+    		width: 500px;   /* slightly larger, but still controlled */
 			}
 }
 
@@ -377,14 +396,10 @@ Using GIS, I specialize in the art and science of cartography, crafting visually
 		</div>
 	<div	
 	<p id="fourthbody">Placeholder.</p>
-		</div>
-<div class="side-by-side-images">
-    <div class="img-wrap">
-        <img src="14442600-1.png">
-    </div>
-    <div class="img-wrap">
-        <img src="14442600-2.png">
-    </div>
+		<div class="side-by-side-images">
+    <img class="vertical" src="14442600-1.png">
+    <img class="horizontal" src="14442600-2.png">
+
 </div>
 </div>
 
