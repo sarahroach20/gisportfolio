@@ -311,6 +311,56 @@ body {
 		.side-by-side-images img.horizontal {
     		width: min(60vw, 850px);
 			}
+	.notice-slideshow {
+    max-width: 1200px;
+}
+
+.notice-pair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.notice-page1 {
+    width: 35%;
+    height: auto;
+    display: block;
+}
+
+.notice-page2 {
+    width: 60%;
+    height: auto;
+    display: block;
+}
+
+.comparison-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.comparison-box {
+    width: 48%;
+    text-align: center;
+}
+
+.comparison-box h3 {
+    font-family: 'Archivo Narrow', serif;
+    color: #565656;
+    font-size: 24px;
+}
+
+.comparison-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 }
 
 </style>
@@ -349,38 +399,33 @@ I rebuilt and expanded a legacy ArcMap-based process into a Python-driven tool i
 
 
 A major focus of the project was reliability and speed during high-volume production. I improved map quality, fixed recurring issues from the previous tool, and implemented performance optimizations to reduce processing time for repeated neighborhood layouts. The completed system successfully generated over 100,000 assessment notices during annual production with no major tool failures, helping staff meet strict deadlines while reducing manual work and improving consistency in taxpayer-facing materials.</p>
-<div class="slideshow-container">
+<div class="slideshow-container notice-slideshow">
 
     <!-- Slide 1: Full Notice -->
     <div class="mySlides0">
-        <div class="side-by-side-images">
-            <img class="vertical" src="14442600-1.png">
-            <img class="horizontal" src="14442600-2.png">
+        <div class="notice-pair">
+            <img class="notice-page1" src="14442600-1.png">
+            <img class="notice-page2" src="14442600-2.png">
         </div>
     </div>
 
     <!-- Slide 2: Old vs New Comparison -->
     <div class="mySlides0">
-        <div class="side-by-side-images">
+        <div class="comparison-row">
 
-            <div style="width:48%; text-align:center;">
-                <h3 style="font-family:'Archivo Narrow'; color:#565656;">
-                    Legacy ArcMap Map 
-                </h3>
-                <img class="horizontal" src="oldnoticemap.png">
+            <div class="comparison-box">
+                <h3>Legacy ArcMap Map</h3>
+                <img src="oldassessmentnotice-2.png">
             </div>
 
-            <div style="width:48%; text-align:center;">
-                <h3 style="font-family:'Archivo Narrow'; color:#565656;">
-                    Redesigned ArcGIS Pro Map
-                </h3>
-                <img class="horizontal" src="14442600-2.png">
+            <div class="comparison-box">
+                <h3>Redesigned ArcGIS Pro Map</h3>
+                <img src="10002099-2.png">
             </div>
 
         </div>
     </div>
 
-    <!-- arrows -->
     <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
     <a class="next" onclick="plusSlides(1, 0)">❯</a>
 
@@ -560,8 +605,8 @@ This project was part of broader GIS and transit planning work where I regularly
     <img src="LIFEEXPECTANCY.PNG" style="width:100%">
   </div>
 
-  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
 </div>
 </div>
 
@@ -619,8 +664,8 @@ This project was part of broader GIS and transit planning work where I regularly
 	<div class="mySlides5">
         <img src="evictionrateunder50klogo-01.png" id="border" style="width:100%">
       		</div>	
-      <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
 		</div>
 
 		<div id="storymaplink">
