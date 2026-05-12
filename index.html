@@ -323,16 +323,33 @@ body {
 			}
 		.side-by-side-images {
     		display: flex;
-    		justify-content: center;
     		gap: 20px;
-   			width: 100%;
+    		justify-content: center;
     		margin: 2rem auto;
 			}
 
-		.side-by-side-images img {
+		.img-wrap {
     		width: 48%;
+			}
+
+		.img-wrap img {
+    		width: 100%;
+    		height: auto;
+    		display: block;
+    		border-radius: 10px;
+			}
+		.single-image {
+    		width: 100%;
+    		display: flex;
+    		justify-content: center;
+    		margin: 2rem auto;
+			}
+
+		.single-image img {
+    		width: min(90%, 800px);
     		height: auto;
     		border-radius: 10px;
+    		display: block;
 			}
 }
 
@@ -361,10 +378,13 @@ Using GIS, I specialize in the art and science of cartography, crafting visually
 	<div	
 	<p id="fourthbody">Placeholder.</p>
 		</div>
-
 <div class="side-by-side-images">
-    <img src="14442600-1.png" alt="Image 1">
-    <img src="14442600-2.png" alt="Image 2">
+    <div class="img-wrap">
+        <img src="14442600-1.png">
+    </div>
+    <div class="img-wrap">
+        <img src="14442600-2.png">
+    </div>
 </div>
 </div>
 
@@ -382,9 +402,8 @@ Using GIS, I specialize in the art and science of cartography, crafting visually
 	<p id="fourthbody">Placeholder.</p>
 		</div>
 
-<div class="side-by-side-images">
-    <img src="shelters.png" alt="Image 1">
-
+<div class="single-image">
+    <img src="shelters.png">
 </div>
 </div>
 
