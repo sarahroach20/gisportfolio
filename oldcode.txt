@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Beth+Ellen">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+body {
+  background-color: #FAFAFA;
+  width: 100%;
+}
+
+			p {
+				font-family: 'Archivo Narrow'; serif;
+        			font-size: 30px;
+				color: #565656;
+				padding: 10px 5px;
+		
+			
+			}
+
+			#secondtitle {
+   				font-family: 'Beth Ellen', serif;
+    			font-size: clamp(2rem, 8vw, 6rem);
+    			color: #565656;
+    			text-shadow: 4px 4px 8px #bbb;
+    			margin: 0;
+    			line-height: 1.1;
+			}
+	
+
+
+			#thirdheader {
+    			font-family: 'Archivo Narrow', serif;
+    			font-size: clamp(1rem, 3vw, 2rem);
+    			color: #565656;
+    			margin-top: 1rem;
+			}
+
+				
+
+			#fourthbody {
+				text-align: center;
+				color: #565656;
+				font-size: 25px;
+				font-family:'Archivo Narrow', serif;
+				padding: 15px;
+				margin: 50px;
+				margin-top: 15px;
+                                margin-bottom: -15px;
+				position: relative;
+
+			}
+			#fifth {
+				font-family:'Archivo Narrow', serif;
+				font-size: 30px;
+				text-align: center;
+				color: #565656;
+			}
+			.image-container {
+    			position: relative;
+  				width: 100%;
+  				max-width: 100%;
+ 			    overflow: hidden;
+			}
+
+			.image-container img {
+    			display: block;
+    			width: 100%;
+    			height: auto;
+			}
+
+			.overlay-text {
+			    position: absolute;
+			    inset: 0;
+
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+
+			    text-align: center;
+			    padding: 2rem;
+			}
+	
+			#contentAreaAboutme {
+				
+         			margin: auto;
+  				width: 20%;
+  				margin-top: 20px;
+  				padding: 10px;  
+				display: flex;
+  				justify-content: center;
+				position: relative;
+
+				
+				
+        		}
+			#contentArea2 {
+         			margin: auto;
+  				width: 50%;
+				padding: 10px;  
+				
+				display: flex;
+				justify-content: center;
+				position: relative;
+
+        		}
+
+			#storymapsettings {
+				
+  	    			width: 60%;
+        			position: relative;
+        			margin: auto;
+				display: flex;
+  				justify-content: center;
+				padding: 60px;
+				
+			}
+			a:link, a:visited {
+				padding: 20px;
+ 				color: #E1E1E1;
+  				font-family: 'Archivo Narrow'; serif;			
+  				font-size: 15px;
+			
+			}
+			#storymaplink {
+				
+				width: 100%;
+        		position: relative;
+        			
+				display: flex;
+  				justify-content: center;
+
+			
+				
+			}
+
+		.hero-banner {
+		    position: relative;
+   			width: 100%;
+    		overflow: hidden;
+			}
+
+
+		.hero-banner img {
+    		width: 100%;
+    		height: auto;
+    		display: block;
+			}
+
+	
+		.hero-text {
+    		position: absolute;
+    		inset: 0;
+
+    		display: flex;
+    		flex-direction: column;
+
+    		justify-content: center;
+    		align-items: center;
+
+    		text-align: center;
+
+    		padding: 2rem;
+
+    		overflow: hidden;
+			}
+
+
+		.hero-text h1 {
+    		font-family: 'Beth Ellen', serif;
+
+    		font-size: clamp(2rem, 7vw, 6rem);
+
+    		color: #565656;
+
+    		margin: 0;
+
+    		line-height: 1.1;
+
+    		text-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+
+    		max-width: 90%;
+			}
+
+
+		.hero-text h2 {
+			font-family: 'Archivo Narrow', serif;
+			font-size: clamp(1rem, 2.5vw, 2rem);
+			color: #565656;
+			margin-top: 1rem;
+			max-width: 90%;
+			}
+	
+		.section-box {
+   			border-radius: 200px;
+    		padding: 0.5rem 2.0rem;
+    		width: fit-content;
+    		margin: 1.5rem auto;
+    		text-align: center;
+    		font-family: 'Archivo Narrow', serif;
+    		font-size: clamp(1rem, 3vw, 2rem);
+    		overflow-wrap: break-word;
+    		color: #565656;
+			}
+		.redborder {
+    		background: #EBE1E7;
+			}
+
+		.orangeborder {
+    		background: #EBE3D3;
+			}
+
+		.blueborder {
+    		background: #DAE1EB;
+			}
+
+		.greenborder {
+    		background: #DDEBCF;
+			}
+
+		.purpleborder {
+    		background: #E0DEEB;
+			}
+
+		.img-wrap {
+    		width: 48%;
+			}
+
+		.img-wrap img {
+    		width: 100%;
+    		height: auto;
+    		display: block;
+    		border-radius: 10px;
+			}
+		.single-image {
+    		display: flex;
+    		justify-content: center;
+    		margin: 2rem auto;
+			}
+
+		.single-image img {
+    		width: min(70vw, 999px);
+    		height: auto;
+    		border-radius: 2px;
+    		display: block;
+			}
+		.side-by-side-images {
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;   
+    		gap: 30px;
+    		margin: 2rem auto;
+    		flex-wrap: wrap;
+			}
+
+
+		.side-by-side-images img {
+    		height: auto;
+    		border-radius: 2px;
+    		display: block;
+			}
+
+
+		.side-by-side-images img.vertical {
+			width: min(40vw, 620px);
+			}
+
+
+		.side-by-side-images img.horizontal {
+    		width: min(60vw, 850px);
+			}
+}
+
+</style>
+</head>
+<body>
+<div class="hero-banner">
+    <img src="bannerfilter.jpg" alt="Banner Image">
+
+    <div class="hero-text">
+        <h1>Sarah Roach</h1>
+        <h2>GIS Professional | Spatial Data, Automation & Cartography</h2>
+    </div>
+</div>
+		    
+		</div>
+		<h2 class="section-box redborder">About Me</h2>        
+		</div>
+	<div	
+	<p id="fourthbody">
+I am a GIS professional specializing in cartography, spatial data management, and workflow automation, with experience spanning local government property assessment, transit systems, and public-facing GIS products. I am passionate about creating maps and geospatial tools that communicate complex information clearly, balancing technical accuracy with strong visual design and usability.
+
+I believe effective cartography plays an important role in the credibility and accessibility of data. Whether developing public-facing transit maps, countywide parcel workflows, or automated GIS tools, my goal is to transform complex spatial information into products that are intuitive, visually polished, and meaningful to a wide range of users.
+
+My work combines cartographic design with technical problem-solving, including GIS automation, Python scripting, spatial data management, and process improvement in ArcGIS Pro. I am committed to continuously improving my skills, exploring new geospatial technologies, and building practical GIS solutions that create measurable real-world impact.
+</p>
+		</div>
+		<h2 class="section-box orangeborder">Assessment Notices Python Tool, 2026</h2>
+		</div>
+	<div	
+	<p id="fourthbody">At the Fayette County Property Valuation Administrator’s Office, I redesigned and modernized the workflow used to generate annual property assessment notices for taxpayers across the county. Assessment notices are mailed to property owners whose assessed value changed and are used to explain the reassessment, provide contact information for questions, outline the appeals/protest process, and give supporting information behind the valuation. A key component of the notice is a comparable sales analysis, which helps taxpayers understand how nearby property sales influenced the assessed value of their home or property.
+
+
+
+I rebuilt and expanded a legacy ArcMap-based process into a Python-driven tool in ArcGIS Pro that automates the creation of these notices at scale. The tool pulls together multiple GIS and tabular data sources, including parcel geometry, ownership information, valuation records, neighborhood sales, and parcel photography, to generate customized PDF notice packets for each property. It automatically creates parcel-specific maps showing the subject parcel, neighborhood context, and recent comparable sales, while also filling in assessment data and taxpayer information into a standardized report template. The workflow can process a single parcel, a neighborhood, or large parcel lists depending on production needs.
+
+
+
+A major focus of the project was reliability and speed during high-volume production. I improved map quality, fixed recurring issues from the previous tool, and implemented performance optimizations to reduce processing time for repeated neighborhood layouts. The completed system successfully generated over 100,000 assessment notices during annual production with no major tool failures, helping staff meet strict deadlines while reducing manual work and improving consistency in taxpayer-facing materials.</p>
+		<div class="side-by-side-images">
+    <img class="vertical" src="14442600-1.png">
+    <img class="horizontal" src="14442600-2.png">
+
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/14442600-1.png">Page 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/14442600-2.png">Page 2</a>
+
+		</div>
+		<h2 class="section-box blueborder">Lextran Winter Weather Emergency Shelter Transit Access Map, 2025</h2>
+		</div>
+	<div	
+	<p id="fourthbody">During my time at Lextran, I developed public-facing GIS products to improve rider access to transit information and community resources. This project focused on creating a winter weather emergency shelter map to help riders understand which shelters were accessible via public transportation during severe weather events.
+
+Rather than relying on a prebuilt basemap or existing template, I assembled the map from the ground up by collecting, organizing, and integrating multiple spatial datasets. I gathered and compiled route data, shelter locations, roadway and contextual map layers, and designed the cartographic layout to clearly communicate route access and connectivity. The final product was designed to be intuitive and easy to read for the general public during emergency situations, balancing geographic accuracy with accessibility and visual clarity.
+
+This project was part of broader GIS and transit planning work where I regularly updated route maps for service changes, maintained transit-related spatial information, and created maps for brochures, public outreach, and rider resources..</p>
+		<div class="single-image">
+    <img src="shelters.png">
+
+</div>
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/shelters.png">Image 1</a>
+		
+    		</div>
+			<h2 class="section-box greenborder">PVA Field Map for Assessors, 2023</h2>
+         
+		</div>
+	<div	
+	<p id="fourthbody">I identified an opportunity to enhance the efficiency and accuracy of field mapping processes. The existing field map, with only three layers—parcels, roads, and building outlines—provided a limited representation of the real-world environment. With their limited resources out of the office, I wanted to make a field map that more accurately reflected what was on-the-ground and provide much needed context to assessors. I used map layers from the Lexington-Fayette Urban County Government (LFUCG), University of Kentucky, KYGEONET, and Openstreetmap, as well as creating/updating layers using aerial imagery when possible. Originally, the parcel layer would only get updated a few times a year and had to be created from scratch every time. Through a redesign of the workflow, the tablet maps are now updated twice a month or as needed, and the completed basemap map document is now accessible on a shared space on the network, ready to be edited. This transformation in the field mapping process not only increased the accuracy of assessments but also significantly improved operational efficiency. The implementation of a more dynamic and regularly updated field map has proven instrumental in eliminating the challenges previously faced, ensuring that assessors have the most current and relevant information at their fingertips. My commitment to optimizing GIS workflows extends beyond creating visually compelling maps to addressing practical challenges within the organization, facilitating a seamless integration of GIS technology into daily operations.</p>
+		</div>
+<div class="slideshow-container">
+	<img src="Media1-Trim-ezgif.com-video-to-gif-converter.gif" style="width:50%; margin-left: 250px;">
+  </div>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="tablet1-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="tablet2-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides2">
+    <img src="tablet3-01.png" style="width:100%">
+  </div>
+	
+<div class="mySlides2">
+    <img src="tabletscale_1k.png" style="width:100%">
+  </div>
+	
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/tablet1-01.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/tablet2-01.png">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/tablet3-01.png">Slide 3</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/tabletscale_1k.png">Slide 4</a>
+
+</div>
+			<h2 class="section-box purpleborder">PVA Assessor NBHD Maps, 2023</h2>
+        
+		</div>
+	<div	
+	<p id="fourthbody">These maps were specifically designed for internal use among the Property Valuation Administrator's (PVA) property assessors, offering them a powerful tool during the demanding assessment season. Recognizing the assessors' need for a more comprehensive understanding of the neighborhoods and individual parcels they were assigned to; I created these maps to act as a reference tool. The maps not only feature fundamental layers like FEMA floodplains and recent parcel sales and their types, but also feature layers such as religious exemption parcels, water bodies, parks, golf courses, cemeteries, and schools. This holistic approach provides assessors with a nuanced perspective of their assigned areas, providing them with essential contextual information crucial for accurate property appraisals. In the ever-evolving housing market, these maps play a pivotal role in enabling assessors to make informed decisions, ultimately minimizing the likelihood of assessment protests in the future. The enhanced understanding of a neighborhood dynamics and how that relates to individual parcel valuation facilitates more accurate and defensible appraisals, contributing to the overall efficiency and effectiveness of the PVA's operations. As a GIS professional, I am dedicated to creating solutions that directly address the unique needs of users, making their day-to-day responsibilities easier.  </p>
+		</div>	
+	<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="nbhd71-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="nbhd134-01-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides3">
+    <img src="nbhd188-01.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/nbhd71-01.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/nbhd134-01-01.png">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/nbhd188-01.png">Slide 3</a>
+
+		
+		</div>
+		</div>
+</div>
+			 <h2 class="section-box redborder">Smiley Pete's 'The State of Local Real Estate 2023: By the Numbers', 2023</h2>                  
+		</div>
+	<div	
+	<p id="fourthbody">This was a mapping project between the PVA and SmileyPete, a local Lexington KY magazine, for their annual real estate edition. Unlike previous years, where maps only included two layers, parcel sales and roads, I created detailed maps that paint a holistic picture of each neighborhood. These maps include essential data like schools, parks, universities, and more, giving a well-rounded view of each area. The goal was to make these maps user-friendly, allowing residents to easily spot their own neighborhood by recognizing familiar areas and features. By mapping sales statistics for six key neighborhoods, highlighting trends and emerging patterns, the aim is to give SmileyPete's readers a clear insight into the changing real estate scene in some of the city's most popular neighborhoods. Through this project, we want to offer more than just surface-level info, providing a simple yet comprehensive visual guide. These maps are tools for readers; they're a way to understand the dynamic nature of our city's neighborhoods in a straightforward manner.</p>
+		</div>	
+	<div class="slideshow-container">
+  <div class="mySlides4">
+    <img src="beaumont-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="downtown-01-01.png" style="width:100%">
+  </div>
+
+  <div class="mySlides4">
+    <img src="waterford-01.png" style="width:100%">
+  </div>
+		
+<div class="mySlides4">
+    <img src="lansdowne-01.png" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/beaumont-01.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/downtown-01-01.png">Slide 2</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/waterford-01.png">Slide 3</a>
+			
+		<a href="https://sarahroach20.github.io/gisportfolio/lansdowne-01.png">Slide 4</a>
+</div> 
+
+		</div>
+			</div>
+		<h2 class="section-box orangeborder">UK Senior Capstone Project/ESRI Map Book, 2022</h2>
+		</div>
+	<div	
+	<p id="fourthbody">For my undergraduate Geography senior capstone project at the University of Kentucky, I wanted to pull from my personal experiences growing up in South Louisville near heavy industry. As a kid, I would walk to the bus stop in the morning and sometimes smell the uniquely weird odor from the next-door factories. I wondered what the source was, and what could it possibly be doing to the health of my neighborhood. Using data from the EPA, CDC, and Census Bureau, I explored the connection between historical demographic, economic, and housing patterns, like redlining in Louisville's west end neighborhoods, and the proximity to polluting facilities. By using a bivariate classification scheme, I was able to show multiple critical data sets and types simultaneously, illuminating the complex web of factors contributing to environmental injustice and health disparities in Louisville's marginalized communities. In 2022, I attended the ESRI User Conference in San Diego through my job at the Fayette County Property Valuation Administration. I submitted this project, and it was selected to be used in ESRI's 2023 Map Book (Volume 38). Through projects like these, my goal is to bridge the gap between data and understanding, presenting crucial issues like environmental injustice in a visually compelling, easily digestible, and attractive manner.</p>
+		</div>
+
+  </div>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="MAPBOOK v38_3-HHS-NtlResMgt-PubSafEmMgt_55-56-1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="ASTHMACOPD.PNG" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="BLACKPOVERTY.PNG" style="width:100%">
+  </div>
+
+<div class="mySlides1">
+    <img src="LIFEEXPECTANCY.PNG" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/MAPBOOK%20v38_3-HHS-NtlResMgt-PubSafEmMgt_55-56-1.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/ASTHMACOPD.PNG">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/BLACKPOVERTY.PNG">Slide 3</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/LIFEEXPECTANCY.PNG">Slide 4</a>
+
+		
+    		</div>
+	</div>
+			 <h2 class="section-box blueborder">UK Mapping Racial Violence in Kentucky Storymap Timeline, 2022</h2>         
+		</div>
+	<div	
+	<p id="fourthbody">In this project, I created an interactive timeline documenting lynchings in Kentucky using ArcGIS StoryMaps. Collaborating with dedicated peers and esteemed professors from the geography and history departments at the University of Kentucky, we conducted thorough research from historical sources like newspapers, census records, and books. My role involved transforming and organizing this important research into a timeline with maps to provide additional context. The timeline features comprehensive descriptions accompanied by historical images and compelling choropleth maps illustrating the number of lynchings, their distribution by decade, percentage of Black residents in each county, and the location of sundown towns overlaid on top. For future students furthering this project, I authored an instruction document outlining symbology information and providing guidance on effectively utilizing ArcGIS StoryMaps for future reference by students. Upon the initial release at the end of the Spring 2022 semester, the project received positive feedback, affirming its impact on viewers. They appreciated the interactive map features and the well-organized wealth of information. This project underscores my dedication to utilizing GIS to shed light on important topics and employing diverse mapping techniques to effectively communicate impactful messages.
+</p>
+		</div>
+	<div id="storymapsettings">
+	<iframe src="https://storymaps.arcgis.com/stories/273734e859fb43bd9cb770735a793857" width="100%" height="450px" frameborder="10" allowfullscreen allow="geolocation"></iframe>
+		</div>
+	<div id="storymaplink">
+	<a href="https://storymaps.arcgis.com/stories/273734e859fb43bd9cb770735a793857">Full Link</a>
+		</div>
+	</div>
+		<h2 class="section-box greenborder">UK Mapshop, 2021</h2>                  
+
+        </div>
+	<div
+	<p id="fourthbody">In this project, I worked with the University of Kentucky’s Mapshop. I collaborated and consulted with faculty, geography department heads, and graduate students on transforming data from the Lexington Fair Housing Council. This data included survey responses on the likelihood of eviction within the coming month. This needed careful cleaning and organization, as it included names, addresses, phone numbers, and emails. I transformed this raw information into a usable format and visible product. The outcome was a series of bivariate maps exploring the relationship between eviction rates and demographic factors. Using Census Bureau and American Community Survey (ACS) data, I created maps revealing correlations with income, single mother households, and race. This visual approach highlighted disparities in eviction rates across different socio-economic and demographic groups. This project, grounded in real-world challenges, demonstrated my ability to navigate complex datasets, maintain data integrity, and communicate nuanced findings through visually compelling maps. It strengthened my commitment to using GIS as a powerful tool for addressing social issues and contributing valuable insights to academic research.
+ </p>
+      		</div>
+	</div>
+	<div class="slideshow-container">
+        <div class="mySlides5">
+        <img src="evictionrateblackpoplogo-01.png" id="border" style="width:100%">
+      		</div>
+        <div class="mySlides5">
+        <img src="evictionrateffhlogo-01.png" id="border" style="width:100%">
+      		</div>
+        <div class="mySlides5">
+        <img src="evictionratehispanicpoplogo-01.png" id="border" style="width:100%">
+      		</div>
+	<div class="mySlides5">
+        <img src="evictionratemaplogo-01.png" id="border" style="width:100%">
+      		</div>
+	<div class="mySlides5">
+        <img src="evictionratenonwhitelogo-01.png" id="border" style="width:100%">
+      		</div>
+	<div class="mySlides5">
+        <img src="evictionrateunder50klogo-01.png" id="border" style="width:100%">
+      		</div>	
+      <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+		</div>
+
+		<div id="storymaplink">
+			
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionrateblackpoplogo-01.png">Slide 1</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionrateffhlogo-01.png">Slide 2</a>
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionratehispanicpoplogo-01.png">Slide 3</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionratemaplogo-01.png">Slide 4</a>  
+		
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionratenonwhitelogo-01.png">Slide 5</a>
+
+		<a href="https://sarahroach20.github.io/gisportfolio/evictionrateunder50klogo-01.png">Slide 6</a>
+		
+    		</div>	
+	<div>
+		<div id="first">
+		
+		<div id="storymaplink">
+		<a href="https://github.com/sarahroach20/gisportfolio">HTML Webpage by Sarah Roach using GitHub Pages</a>
+			</div>
+	
+</div>
+	</div>
+<script>
+let slideIndex = [1,1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5" ]
+showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showSlides(1, 3);
+    showSlides(1, 4);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 
