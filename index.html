@@ -349,9 +349,40 @@ I rebuilt and expanded a legacy ArcMap-based process into a Python-driven tool i
 
 
 A major focus of the project was reliability and speed during high-volume production. I improved map quality, fixed recurring issues from the previous tool, and implemented performance optimizations to reduce processing time for repeated neighborhood layouts. The completed system successfully generated over 100,000 assessment notices during annual production with no major tool failures, helping staff meet strict deadlines while reducing manual work and improving consistency in taxpayer-facing materials.</p>
-		<div class="side-by-side-images">
-    <img class="vertical" src="14442600-1.png">
-    <img class="horizontal" src="14442600-2.png">
+<div class="slideshow-container">
+
+    <!-- Slide 1: Full Notice -->
+    <div class="mySlides1">
+        <div class="side-by-side-images">
+            <img class="vertical" src="14442600-1.png">
+            <img class="horizontal" src="14442600-2.png">
+        </div>
+    </div>
+
+    <!-- Slide 2: Old vs New Comparison -->
+    <div class="mySlides1">
+        <div class="side-by-side-images">
+
+            <div style="width:48%; text-align:center;">
+                <h3 style="font-family:'Archivo Narrow'; color:#565656;">
+                    Legacy ArcMap Workflow
+                </h3>
+                <img class="horizontal" src="oldnoticemap.png">
+            </div>
+
+            <div style="width:48%; text-align:center;">
+                <h3 style="font-family:'Archivo Narrow'; color:#565656;">
+                    Redesigned ArcGIS Pro Workflow
+                </h3>
+                <img class="horizontal" src="14442600-2.png">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- arrows -->
+    <a class="prev" onclick="plusSlides(-1, 0)">❮</a>
+    <a class="next" onclick="plusSlides(1, 0)">❯</a>
 
 </div>
 </div>
@@ -640,6 +671,34 @@ function showSlides(n, no) {
   x[slideIndex[no]-1].style.display = "block";  
 }
 </script>
+<script>
+let slideIndex = [1];
+let slideId = ["mySlides1"];
 
+showSlides(1, 0);
+
+function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+    let i;
+    let slides = document.getElementsByClassName(slideId[no]);
+
+    if (n > slides.length) {
+        slideIndex[no] = 1;
+    }
+
+    if (n < 1) {
+        slideIndex[no] = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex[no]-1].style.display = "block";
+}
+</script>
 </body>
 </html> 
